@@ -169,3 +169,6 @@ Ctrl + c 退出调试。
 后台运行：
 
 `./run.sh`
+
+# 屏蔽后显示的页面修改
+如果您想自定义这个阻断页面的内容，请在每个后端目录下，复制 detect.html 为 user-detect.html 然后修改 user-detect.html ，重启后端即可自定义。
