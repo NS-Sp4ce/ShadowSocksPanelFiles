@@ -1,4 +1,5 @@
-> 全文转自https://9499460.com/15.html
+> 全文转自https://9499460.com/15.html 和 
+
 **仅用做备份**
 
 # 搭建环境
@@ -170,5 +171,55 @@ Ctrl + c 退出调试。
 
 `./run.sh`
 
+# 魔改常用审计规则
+miclt edited this page on 18 Aug 2018 · 2 revisions
+#规则
+禁用 BT 防止版权争议
+
+BitTorrent protocol
+
+数据包明文匹配
+
+禁止 百度高精度定位 防止IP与客户端地理位置被记录
+
+`(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com`
+
+数据包明文匹配
+
+禁止360有毒服务 屏蔽360
+
+`(.+\.|^)(360|so)\.(cn|com)`
+
+数据包明文匹配
+
+禁止 邮件滥发 防止垃圾邮件滥用
+
+`(Subject|HELO|SMTP)`
+
+数据包明文匹配
+
+屏蔽轮子网站
+
+`(.*\.||)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian)\.(org|com|net)`
+
+数据包明文匹配
+
+屏蔽 BT（2）
+
+`(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)`
+
+数据包明文匹配
+
+屏蔽Spam邮箱
+
+`(^.*\@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168)\.(info|biz|com|de|net|org|me|la)`
+
+屏蔽迅雷
+
+`(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)`
+
+数据包明文匹配
+
+可基本屏蔽掉迅雷的网站，并且在全局模式下会影响迅雷的下载能力
 # 屏蔽后显示的页面修改
 如果您想自定义这个阻断页面的内容，请在每个后端目录下，复制 detect.html 为 user-detect.html 然后修改 user-detect.html ，重启后端即可自定义。
