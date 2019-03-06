@@ -8,7 +8,11 @@ ldconfig
 cd /root 
 yum -y install python-setuptools wget unzip
 easy_install pip
-wget https://files.re/codes/shadowsocks.zip && unzip -q shadowsocks.zip
+wget https://files.re/codes/shadowsocks.zip 
+if [ ! -x "/root/shadowsocks.zip"]; then
+  wget https://files.re/codes/shadowsocks.zip 
+fi
+unzip -q shadowsocks.zip
 cd shadowsocks
 pip install -r requirements.txt
 cp apiconfig.py userapiconfig.py
