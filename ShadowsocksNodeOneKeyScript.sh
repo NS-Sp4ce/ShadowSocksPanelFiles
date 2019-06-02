@@ -1,4 +1,5 @@
-shadowsocksDownloadAddress="https://files.re/codes/shadowsocks.zip"
+shadowsocksDownloadAddress="https://raw.githubusercontent.com/NS-Sp4ce/ShadowSocksPanelFiles/master/shadowsocks.zip"
+bbrDownloadAddress="https://raw.githubusercontent.com/NS-Sp4ce/ShadowSocksPanelFiles/master/bbr.sh"
 echo "system Updating......."
 yum update -y && yum upgrade -y
 echo "Development Installing......."
@@ -26,3 +27,5 @@ else
     systemctl stop firewalld.service
     systemctl disable firewalld.service
 fi
+echo "Now Install BBR"
+wget --no-check-certificate ${bbrDownloadAddress} && chmod +x bbr.sh && ./bbr.sh
