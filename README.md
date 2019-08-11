@@ -1,6 +1,10 @@
 > 全文转自https://9499460.com/15.html 和 
 
 **仅用做备份**
+一键安装节点
+
+> wget -O - https://raw.githubusercontent.com/NS-Sp4ce/ShadowSocksPanelFiles/master/ShadowsocksNodeOneKeyScript.sh  | bash
+
 
 # 搭建环境
  - 核心：1CPU 
