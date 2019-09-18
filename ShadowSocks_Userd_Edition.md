@@ -26,4 +26,4 @@ ExecStart=/usr/bin/ssserver -c /etc/shadowsocks.json
 [Install]
 WantedBy=multi-user.target
 ```
-`systemctl enable shadowsocks & systemctl start shadowsocks & systemctl stop firewalld & systemctl disable firewalld`
+`systemctl enable shadowsocks && systemctl start shadowsocks && systemctl stop firewalld && systemctl disable firewalld`
