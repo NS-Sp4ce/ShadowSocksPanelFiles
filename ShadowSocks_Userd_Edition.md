@@ -3,8 +3,9 @@ Need A Overseas VPS
 # Steps
 1. `curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"`
 2. `python get-pip.py`
-3. `vim /etc/shadowsocks.json`
-4. `pip install shadowsocks`
+3. `pip install shadowsocks`
+4. `vim /etc/shadowsocks.json`
+
 Edit`shadowsocks.json` As Follows
 ```
 {
@@ -28,3 +29,6 @@ ExecStart=/usr/bin/ssserver -c /etc/shadowsocks.json
 WantedBy=multi-user.target
 ```
 `systemctl enable shadowsocks && systemctl start shadowsocks && systemctl stop firewalld && systemctl disable firewalld`
+
+# install BBR
+`wget https://raw.githubusercontent.com/NS-Sp4ce/ShadowSocksPanelFiles/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh`
