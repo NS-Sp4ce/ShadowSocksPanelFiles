@@ -1,5 +1,8 @@
 > 全文转自https://9499460.com/15.html 和 
 
+[单用户点这里](https://github.com/NS-Sp4ce/ShadowSocksPanelFiles/blob/master/ShadowSocks_Userd_Edition.md)
+
+
 **仅用做备份**
 一键安装节点
 
