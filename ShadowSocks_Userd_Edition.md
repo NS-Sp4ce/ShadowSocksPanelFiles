@@ -4,13 +4,14 @@ Need A Overseas VPS
 1. `curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"`
 2. `python get-pip.py`
 3. `vim /etc/shadowsocks.json`
+4. `pip install shadowsocks`
 Edit`shadowsocks.json` As Follows
 ```
 {
 "server": "0.0.0.0",
 "server_port": "36789",
 "password": "yourpassword",
-"timeout": 600,
+"timeout": "600",
 "method": "aes-256-cfb"
 }
 ```
