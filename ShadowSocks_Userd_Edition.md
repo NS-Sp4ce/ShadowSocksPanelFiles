@@ -32,3 +32,15 @@ WantedBy=multi-user.target
 
 # install BBR
 `wget https://raw.githubusercontent.com/NS-Sp4ce/ShadowSocksPanelFiles/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh`
+
+# Update To 3.0 To Support More Encrypt Method
+1. `pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U`
+2. 
+```
+wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
+tar zxf LATEST.tar.gz
+cd libsodium*
+./configure
+sudo make && sudo make install
+```
+3. Restart Shadowsocks And Enjoy
