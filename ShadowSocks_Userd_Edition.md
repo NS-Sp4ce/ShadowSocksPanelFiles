@@ -44,3 +44,9 @@ cd libsodium*
 sudo make && sudo make install
 ```
 3. Restart Shadowsocks And Enjoy
+
+# V2ray
+1. `wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh`
+2. `pip install Flask-BasicAuth`
+3. `v2ray`
+4. `1`
